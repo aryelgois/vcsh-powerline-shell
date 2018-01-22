@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+set -e
+
+if ! hash pip 2> /dev/null; then
+    sudo apt-get update
+    sudo apt-get install -y python-pip
+fi
+
+pip install --upgrade pip
+pip install powerline-shell
+
+cat <<'EOF' >> ~/.bashrc
+
+# Powerline
+function _update_ps1_powerline() {
+    PS1="$(powerline-shell $?)"
+}
+
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1_powerline"
+fi
+EOF
