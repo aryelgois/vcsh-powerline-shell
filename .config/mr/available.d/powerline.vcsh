@@ -1,2 +1,2 @@
 [$HOME/.config/vcsh/repo.d/powerline.git]
-checkout = vcsh clone git://github.com/aryelgois/vcsh-powerline.git powerline
+checkout = vcsh clone https://github.com/aryelgois/vcsh-powerline.git powerline
