@@ -1,0 +1,12 @@
+*
+!/.config
+!/.config/mr
+!/.config/mr/available.d
+!/.config/mr/available.d/powerline-shell.vcsh
+!/.config/mr/config.d
+!/.config/mr/config.d/powerline-shell.vcsh
+!/.gitignore.d
+!/.gitignore.d/powerline-shell
+!/.powerline-shell.json
+!/bin
+!/bin/,setup-powerline-shell

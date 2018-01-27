@@ -14,7 +14,7 @@ pip install powerline-shell
 
 cat <<'EOF' >> ~/.localrc
 
-# Powerline
+# powerline-shell
 function _update_ps1_powerline() {
     PS1="$(powerline-shell $?)"
 }
