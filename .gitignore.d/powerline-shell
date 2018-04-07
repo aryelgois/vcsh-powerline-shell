@@ -7,6 +7,8 @@
 !/.config/mr/config.d/powerline-shell.vcsh
 !/.gitignore.d
 !/.gitignore.d/powerline-shell
+
 !/.powerline-shell.json
+
 !/bin
 !/bin/,setup-powerline-shell
