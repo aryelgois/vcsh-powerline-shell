@@ -10,9 +10,12 @@ fi
 pip install --upgrade pip
 pip install powerline-shell
 
-[ -f ~/.localrc ] || echo '# Sourced by .bashrc' > ~/.localrc
+if [[ ! -f ~/.config/bash/localrc ]]; then
+    mkdir -p ~/.config/bash
+    echo '# Sourced by bashrc' > ~/.config/bash/localrc
+fi
 
-cat <<'EOF' >> ~/.localrc
+cat <<'EOF' >> ~/.config/bash/localrc
 
 # powerline-shell
 function _update_ps1_powerline() {
